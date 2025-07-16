@@ -6,7 +6,7 @@
 /*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:37:42 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/07/16 21:07:08 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/07/16 21:14:29 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@ int	ft_strlen(const char *s)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
-	{
-		return (0);
-	}
+
 	while (s[i] != '\0')
 	{
 		i++;
