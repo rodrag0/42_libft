@@ -6,13 +6,12 @@
 /*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:37:42 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/09 14:46:39 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/09 15:11:11 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(const char *s)
 {
-	//test comment
 	int	i;
 
 	i = 0;
