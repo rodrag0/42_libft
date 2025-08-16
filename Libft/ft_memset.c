@@ -6,24 +6,24 @@
 /*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 22:21:25 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/16 23:54:25 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/17 00:01:17 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// #include <stddef.h>
+
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char *tmp = (unsigned char *)b;
-		//creating the variable tmp to work with the array wothout chaning the position of b
-	//unsigned char to work with it safely since ascii and memory go until 255
+	unsigned char	*tmp;
+
+	tmp = (unsigned char *)b;
 	while (len--)
 	{
 		*tmp = (unsigned char)c;
 		tmp++;
 	}
 	return (b);
-	//returning the same data i had been working on just on the untouched og position
 }
-
 // int main(void) {
 //     char str[50] = "Hello, World!";
 //     ft_memset(str, 65, 5);
@@ -69,7 +69,7 @@ void	*ft_memset(void *b, int c, size_t len)
 //     }
 //     return(b);
 // }
-
+// #include <stdio.h>
 // int main(void) {
 //     char str[50] = "Hello, World!";
 //     ft_memset(str, 65, 5);
