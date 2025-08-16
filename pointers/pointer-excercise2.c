@@ -2,10 +2,11 @@
 
 int sum_array(int *arr, int size) {
     // your code here
-    int sum = 0;
+    int sum;
+    sum = 0; // initialize sum to 0
     while (size > 0) {
         sum += *arr; 
-        *(arr+1); // move to next element
+        arr++; // move to next element
         size--; // decrease size
 
         // decrease size
