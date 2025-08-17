@@ -6,11 +6,11 @@
 /*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 22:21:25 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/17 00:01:17 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/17 15:02:54 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stddef.h>
+#include <string.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
