@@ -6,33 +6,34 @@
 /*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 16:43:24 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/24 19:06:14 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/24 19:29:13 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
+// #include <string.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n);
+// void	*ft_memcpy(void *dst, const void *src, size_t n);
 
-int	main(void)
-{
-	char	dst[] = "hola mundo";
-	char	src[] = "adio";
+// int	main(void)
+// {
+// 	char	dst[] = "hola mundo";
+// 	char	src[] = "adio";
 
-	// int argc, char *argv[]
-	// printf("%d", argc);
-	// int i = 0;
-	// while(argc--){
-	//     printf("%s \n", argv[i]);
-	//     i++;
-	// }
-	// printf("\n");
-	// dst[] = "hola mundo";
-	// src[] = "adio";
-	ft_memcpy(dst, src, 4);
-	printf("%s", dst);
-}
+// 	// int argc, char *argv[]
+// 	// printf("%d", argc);
+// 	// int i = 0;
+// 	// while(argc--){
+// 	//     printf("%s \n", argv[i]);
+// 	//     i++;
+// 	// }
+// 	// printf("\n");
+// 	// dst[] = "hola mundo";
+// 	// src[] = "adio";
+// 	printf("Original: %s\n", dst);
+// 	ft_memcpy(dst, src, 1);
+// 	printf("%s \n", dst);
+// }
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
