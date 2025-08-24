@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 16:43:24 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/17 16:46:28 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/24 19:00:58 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,18 +36,20 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char   *t_dst;
-	const unsigned char *t_src;
-	*t_src = (const unsigned char *)src;
-	*t_dst = (unsigned char *)dst;
+	unsigned char		*t_dst;
+	const unsigned char	*t_src;
+	size_t				i;
+
+	t_src = (const unsigned char *)src;
+	t_dst = (unsigned char *)dst;
+	i = 0;
 	if (!dst && !src)
 		return (NULL);
-	int i = 0;
-
-	while (n--)
+	while (n > 0)
 	{
-		*(t_dst + i) = *(t_src + i);
+		t_dst[i] = t_src[i];
 		i++;
+		n--;
 	}
 	return (dst);
 }
