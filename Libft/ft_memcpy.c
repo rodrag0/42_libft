@@ -6,7 +6,7 @@
 /*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 16:43:24 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/24 19:00:58 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/08/24 19:06:14 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 
-// int	main(void)
-// {
-// 	char	dst[];
-// 	char	src[];
+int	main(void)
+{
+	char	dst[] = "hola mundo";
+	char	src[] = "adio";
 
-// 	// int argc, char *argv[]
-// 	// printf("%d", argc);
-// 	// int i = 0;
-// 	// while(argc--){
-// 	//     printf("%s \n", argv[i]);
-// 	//     i++;
-// 	// }
-// 	// printf("\n");
-// 	dst[] = "hola mundo";
-// 	src[] = "adio";
-// 	ft_memcpy(dst, src, 4);
-// 	printf("%s", dst);
-// }
+	// int argc, char *argv[]
+	// printf("%d", argc);
+	// int i = 0;
+	// while(argc--){
+	//     printf("%s \n", argv[i]);
+	//     i++;
+	// }
+	// printf("\n");
+	// dst[] = "hola mundo";
+	// src[] = "adio";
+	ft_memcpy(dst, src, 4);
+	printf("%s", dst);
+}
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
