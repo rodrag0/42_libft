@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 15:30:04 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/09 15:30:20 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/09/03 15:42:21 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int	ft_isdigit(int c)
 {

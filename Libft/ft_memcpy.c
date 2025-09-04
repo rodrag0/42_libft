@@ -6,10 +6,11 @@
 /*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 16:43:24 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/24 19:29:13 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/09/03 15:42:21 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
 // #include <string.h>
 

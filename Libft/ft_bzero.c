@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rponce-c <rponce-c@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 00:13:52 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/08/17 00:22:37 by rponce-c         ###   ########.fr       */
+/*   Updated: 2025/09/03 15:42:21 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
+#include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {
