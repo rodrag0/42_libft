@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rponce-c <rponce-c@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/17 00:13:52 by rponce-c          #+#    #+#             */
-/*   Updated: 2025/09/03 15:42:21 by rponce-c         ###   ########.fr       */
+/*   Created: 2025/09/05 14:37:25 by rponce-c          #+#    #+#             */
+/*   Updated: 2025/09/05 14:37:25 by rponce-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	unsigned char	*temp;
+	size_t	srclen;
+	size_t	dstlen;
 
-	temp = (unsigned char *)s;
-	while (n--)
+	srclen = ft_strlen(src) + 1;
+	dstlen = dstsize;
+	if (dstlen > 0)
 	{
-		*(temp) = 0;
-		temp++;
+		if (srclen <= dstlen)
+			ft_memcpy(dst, src, srclen);
+		else
+		{
+			ft_memcpy(dst, src, dstlen - 1);
+			dst[dstlen - 1] = '\0';
+		}
 	}
+	return (srclen - 1);
 }
 
-// int main(void) {
-//     char str[50] = "Hello, World!";
-//     ft_bzero(str+6, 5);
-//     printf("%s\n", str);
-//     return (0);
-// }
